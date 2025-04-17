@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolia - Soumya Basude</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneve, Verdana, sans-serif;
+	  font-size:20px;
+	  font-weight:bold;
+	  line-height:1.6;
+      color: rgba(255, 255, 255, 0.9);
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 700;
+    }
+
+    .menu a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .section-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      width: 85%;
+      max-width: 1000px;
+    }
+
+    h1, h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    ul, p {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    /* Section Background Images */
+  
+	
+  /* #home
+  {
+  background-color:;#fcb7a9;
+	} */
+	
+	 #home{
+	    background-color:#fcb7a9;
+	}
+	  #education{
+      background-color: #fcb7a9;
+	  }
+	
+    #skills{
+      background-color:#fcb7a9;
+
+    #projects{
+      background-color: #fcb7a9;
+    }
+
+    #contact{
+      background-color: #fcb7a9;
+    }
+
+    footer {
+      background-color: #111;
+      color: rgba(255, 255, 255, 0.6);
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu a {
+        display: block;
+        margin: 10px 0;
+      }
+      .section-content {
+        width: 95%;
+        padding: 20px;
+      }
+    }
+	@media print{
+	nav, .menu{
+		display:none;
+		}
+	}
+		
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Portfolia</div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id= "home">
+    <div class="section-content">
+      <h1>I am Soumya Basude</h1>
+      <p>A Computer Engineering Student</p>
+    </div>
+  </section>
+
+  <section id= "education">
+    <div class="section-content">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>10th SSC in Shri Siddheshwar English Medium High School, Solapur</strong> -(2024)</li>
+        <li><strong>Diploma in Computer Science in Government Polytechnic Solapur(Currently)</strong> – MSBTE (2025)</li>
+  
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <ul>
+        <li>Communication & Presentation</li>
+        <li>Critical Thinking & Client Follow-Up</li>
+        <li>Tools: C, HTML</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-content">
+      <h2>Projects</h2>
+      <ul>
+		
+        <li><strong>Fun Hangman Word Guessing Game using C Programming Language</strong> </li>
+     
+	  </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Phone:</strong> +91 1234567890</li>
+        <li><strong>Email:</strong> soumyabasude2@gmail.com</li>
+        <li><strong>Languages:</strong> English, Kshatriya, Hindi, Marathi, Spanish, German, Korean, Sanskrit</li>
+      </ul>
+      <p>I am passionate to learn emerging trends and new technologies in computer technology field</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Soumya Basude. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
